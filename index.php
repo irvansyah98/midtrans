@@ -2,7 +2,7 @@
 //Tetapkan kunci server Anda (Catatan: Kunci server untuk mode sandbox dan mode produksi berbeda)
 $server_key = 'SB-Mid-server-dbbL_cnYxewcprTEtc_Z5ZN8';
 // Set true untuk produksi, set false untuk sandbox
-$is_production = false;
+$is_production = true;
 $api_url = $is_production ? 
   'https://app.midtrans.com/snap/v1/transactions' : 
   'https://app.sandbox.midtrans.com/snap/v1/transactions';
