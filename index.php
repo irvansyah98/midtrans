@@ -4,9 +4,7 @@
 $server_key = 'SB-Mid-server-rCZKKq_SwrJoP5KUTNg2gGuP';
 // Set true untuk produksi, set false untuk sandbox
 $is_production = false;
-$api_url = $is_production ? 
-  'https://app.midtrans.com/snap/v1/transactions' : 
-  'https://app.sandbox.midtrans.com/snap/v1/transactions';
+$api_url = 'https://app.sandbox.midtrans.com/snap/v1/transactions';
 // Periksa apakah permintaan tidak mengandung `/charge (biaya)` di url / path, tampilkan 404
 if( !strpos($_SERVER['REQUEST_URI'], '/charge') ) {
   http_response_code(404); 
