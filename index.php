@@ -1,10 +1,10 @@
 <?php
 
 //Tetapkan kunci server Anda (Catatan: Kunci server untuk mode sandbox dan mode produksi berbeda)
-$server_key = 'SB-Mid-server-rCZKKq_SwrJoP5KUTNg2gGuP';
+$server_key = 'Mid-server-KNs8UFedYxYux9TzsKoZFOi0';
 // Set true untuk produksi, set false untuk sandbox
 $is_production = false;
-$api_url = 'https://app.sandbox.midtrans.com/snap/v1/transactions';
+$api_url = 'https://app.midtrans.com/snap/v1/transactions';
 // Periksa apakah permintaan tidak mengandung `/charge (biaya)` di url / path, tampilkan 404
 if( !strpos($_SERVER['REQUEST_URI'], '/charge') ) {
   http_response_code(404); 
